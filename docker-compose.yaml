@@ -1,0 +1,20 @@
+version: '3'
+services:
+  one:
+   build:
+    context: ./file-one
+   image: server1
+   ports:
+   - "8081:8080"
+  two:
+   build:
+    context: ./file-two
+   image: server2
+   ports:
+   - "8082:8080"
+  three:
+   build:
+    context: ./file-three
+   image: server3
+   ports:
+   - "8083:8080"
